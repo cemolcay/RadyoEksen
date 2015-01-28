@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2CB49751A7929560075687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49741A7929560075687F /* AppDelegate.swift */; };
+		B2CB49771A7929560075687F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49761A7929560075687F /* Images.xcassets */; };
+		B2CB497A1A7929560075687F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49781A7929560075687F /* MainMenu.xib */; };
+		B2CB49861A7929560075687F /* RadyoEksenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49851A7929560075687F /* RadyoEksenTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2CB49801A7929560075687F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2CB49671A7929560075687F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2CB496E1A7929560075687F;
+			remoteInfo = RadyoEksen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2CB496F1A7929560075687F /* RadyoEksen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadyoEksen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CB49731A7929560075687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CB49741A7929560075687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2CB49761A7929560075687F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2CB49791A7929560075687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B2CB497F1A7929560075687F /* RadyoEksenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadyoEksenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CB49841A7929560075687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CB49851A7929560075687F /* RadyoEksenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadyoEksenTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2CB496C1A7929560075687F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CB497C1A7929560075687F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2CB49661A7929560075687F = {
+			isa = PBXGroup;
+			children = (
+				B2CB49711A7929560075687F /* RadyoEksen */,
+				B2CB49821A7929560075687F /* RadyoEksenTests */,
+				B2CB49701A7929560075687F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2CB49701A7929560075687F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB496F1A7929560075687F /* RadyoEksen.app */,
+				B2CB497F1A7929560075687F /* RadyoEksenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2CB49711A7929560075687F /* RadyoEksen */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB49741A7929560075687F /* AppDelegate.swift */,
+				B2CB49761A7929560075687F /* Images.xcassets */,
+				B2CB49781A7929560075687F /* MainMenu.xib */,
+				B2CB49721A7929560075687F /* Supporting Files */,
+			);
+			path = RadyoEksen;
+			sourceTree = "<group>";
+		};
+		B2CB49721A7929560075687F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB49731A7929560075687F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2CB49821A7929560075687F /* RadyoEksenTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB49851A7929560075687F /* RadyoEksenTests.swift */,
+				B2CB49831A7929560075687F /* Supporting Files */,
+			);
+			path = RadyoEksenTests;
+			sourceTree = "<group>";
+		};
+		B2CB49831A7929560075687F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB49841A7929560075687F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2CB496E1A7929560075687F /* RadyoEksen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CB49891A7929560075687F /* Build configuration list for PBXNativeTarget "RadyoEksen" */;
+			buildPhases = (
+				B2CB496B1A7929560075687F /* Sources */,
+				B2CB496C1A7929560075687F /* Frameworks */,
+				B2CB496D1A7929560075687F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadyoEksen;
+			productName = RadyoEksen;
+			productReference = B2CB496F1A7929560075687F /* RadyoEksen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2CB497E1A7929560075687F /* RadyoEksenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CB498C1A7929560075687F /* Build configuration list for PBXNativeTarget "RadyoEksenTests" */;
+			buildPhases = (
+				B2CB497B1A7929560075687F /* Sources */,
+				B2CB497C1A7929560075687F /* Frameworks */,
+				B2CB497D1A7929560075687F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2CB49811A7929560075687F /* PBXTargetDependency */,
+			);
+			name = RadyoEksenTests;
+			productName = RadyoEksenTests;
+			productReference = B2CB497F1A7929560075687F /* RadyoEksenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2CB49671A7929560075687F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Cem Olcay";
+				TargetAttributes = {
+					B2CB496E1A7929560075687F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B2CB497E1A7929560075687F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B2CB496E1A7929560075687F;
+					};
+				};
+			};
+			buildConfigurationList = B2CB496A1A7929560075687F /* Build configuration list for PBXProject "RadyoEksen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2CB49661A7929560075687F;
+			productRefGroup = B2CB49701A7929560075687F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2CB496E1A7929560075687F /* RadyoEksen */,
+				B2CB497E1A7929560075687F /* RadyoEksenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2CB496D1A7929560075687F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CB49771A7929560075687F /* Images.xcassets in Resources */,
+				B2CB497A1A7929560075687F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CB497D1A7929560075687F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2CB496B1A7929560075687F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CB49751A7929560075687F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CB497B1A7929560075687F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CB49861A7929560075687F /* RadyoEksenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2CB49811A7929560075687F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2CB496E1A7929560075687F /* RadyoEksen */;
+			targetProxy = B2CB49801A7929560075687F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2CB49781A7929560075687F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2CB49791A7929560075687F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2CB49871A7929560075687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2CB49881A7929560075687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B2CB498A1A7929560075687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RadyoEksen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2CB498B1A7929560075687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RadyoEksen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2CB498D1A7929560075687F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RadyoEksenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadyoEksen.app/Contents/MacOS/RadyoEksen";
+			};
+			name = Debug;
+		};
+		B2CB498E1A7929560075687F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RadyoEksenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadyoEksen.app/Contents/MacOS/RadyoEksen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2CB496A1A7929560075687F /* Build configuration list for PBXProject "RadyoEksen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CB49871A7929560075687F /* Debug */,
+				B2CB49881A7929560075687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2CB49891A7929560075687F /* Build configuration list for PBXNativeTarget "RadyoEksen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CB498A1A7929560075687F /* Debug */,
+				B2CB498B1A7929560075687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2CB498C1A7929560075687F /* Build configuration list for PBXNativeTarget "RadyoEksenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CB498D1A7929560075687F /* Debug */,
+				B2CB498E1A7929560075687F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2CB49671A7929560075687F /* Project object */;
+}
