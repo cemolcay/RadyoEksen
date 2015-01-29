@@ -66,7 +66,20 @@ class EksenView: NSView {
                 let label = meta.value() as String
                 let title = label.componentsSeparatedByString("\r")
                 eksenLabel.string = title[0]
+                pushNotification(title[0])
             }
         }
+    }
+    
+    func pushNotification (title: String) {
+        let tit = title.componentsSeparatedByString("-")
+        let artist = tit[0]
+        let song = tit[1]
+        
+        let notif = NSUserNotification ()
+        notif.title = artist
+        notif.informativeText = song
+        notif.deliveryDate = NSDate (timeInterval: 1, sinceDate: NSDate())
+        NSUserNotificationCenter.defaultUserNotificationCenter().scheduleNotification(notif)
     }
 }
