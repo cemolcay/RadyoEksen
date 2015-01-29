@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B2CB49751A7929560075687F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49741A7929560075687F /* AppDelegate.swift */; };
-		B2CB49771A7929560075687F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49761A7929560075687F /* Images.xcassets */; };
 		B2CB497A1A7929560075687F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49781A7929560075687F /* MainMenu.xib */; };
 		B2CB49861A7929560075687F /* RadyoEksenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49851A7929560075687F /* RadyoEksenTests.swift */; };
 		B2CB49911A7929640075687F /* eksenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49901A7929640075687F /* eksenLogo.png */; };
@@ -18,6 +17,19 @@
 		B2CB499C1A792B360075687F /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB499A1A792B360075687F /* pause.png */; };
 		B2CB499D1A792B360075687F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB499B1A792B360075687F /* play.png */; };
 		B2CB499F1A792CDA0075687F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CB499E1A792CDA0075687F /* AVFoundation.framework */; };
+		B2CB49AB1A7A38930075687F /* eksen32.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49AA1A7A38930075687F /* eksen32.png */; };
+		B2CB49CD1A7A3ACF0075687F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C21A7A3ACF0075687F /* Contents.json */; };
+		B2CB49CE1A7A3ACF0075687F /* Icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C31A7A3ACF0075687F /* Icon_128x128.png */; };
+		B2CB49CF1A7A3ACF0075687F /* Icon_128x128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C41A7A3ACF0075687F /* Icon_128x128@2x.png */; };
+		B2CB49D01A7A3ACF0075687F /* Icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C51A7A3ACF0075687F /* Icon_16x16.png */; };
+		B2CB49D11A7A3ACF0075687F /* Icon_16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C61A7A3ACF0075687F /* Icon_16x16@2x.png */; };
+		B2CB49D21A7A3ACF0075687F /* Icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C71A7A3ACF0075687F /* Icon_256x256.png */; };
+		B2CB49D31A7A3ACF0075687F /* Icon_256x256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C81A7A3ACF0075687F /* Icon_256x256@2x.png */; };
+		B2CB49D41A7A3ACF0075687F /* Icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49C91A7A3ACF0075687F /* Icon_32x32.png */; };
+		B2CB49D51A7A3ACF0075687F /* Icon_32x32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49CA1A7A3ACF0075687F /* Icon_32x32@2x.png */; };
+		B2CB49D61A7A3ACF0075687F /* Icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49CB1A7A3ACF0075687F /* Icon_512x512.png */; };
+		B2CB49D71A7A3ACF0075687F /* Icon_512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49CC1A7A3ACF0075687F /* Icon_512x512@2x.png */; };
+		B2CB49D91A7A3B800075687F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49D81A7A3B800075687F /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +46,6 @@
 		B2CB496F1A7929560075687F /* RadyoEksen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadyoEksen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CB49731A7929560075687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CB49741A7929560075687F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2CB49761A7929560075687F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2CB49791A7929560075687F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B2CB497F1A7929560075687F /* RadyoEksenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadyoEksenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CB49841A7929560075687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +57,19 @@
 		B2CB499A1A792B360075687F /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		B2CB499B1A792B360075687F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		B2CB499E1A792CDA0075687F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B2CB49AA1A7A38930075687F /* eksen32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eksen32.png; sourceTree = "<group>"; };
+		B2CB49C21A7A3ACF0075687F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		B2CB49C31A7A3ACF0075687F /* Icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_128x128.png; sourceTree = "<group>"; };
+		B2CB49C41A7A3ACF0075687F /* Icon_128x128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_128x128@2x.png"; sourceTree = "<group>"; };
+		B2CB49C51A7A3ACF0075687F /* Icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_16x16.png; sourceTree = "<group>"; };
+		B2CB49C61A7A3ACF0075687F /* Icon_16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_16x16@2x.png"; sourceTree = "<group>"; };
+		B2CB49C71A7A3ACF0075687F /* Icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_256x256.png; sourceTree = "<group>"; };
+		B2CB49C81A7A3ACF0075687F /* Icon_256x256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_256x256@2x.png"; sourceTree = "<group>"; };
+		B2CB49C91A7A3ACF0075687F /* Icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_32x32.png; sourceTree = "<group>"; };
+		B2CB49CA1A7A3ACF0075687F /* Icon_32x32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_32x32@2x.png"; sourceTree = "<group>"; };
+		B2CB49CB1A7A3ACF0075687F /* Icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_512x512.png; sourceTree = "<group>"; };
+		B2CB49CC1A7A3ACF0075687F /* Icon_512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_512x512@2x.png"; sourceTree = "<group>"; };
+		B2CB49D81A7A3B800075687F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +116,7 @@
 				B2CB49941A79299D0075687F /* IconView.swift */,
 				B2CB49961A7929B80075687F /* EksenView.swift */,
 				B2CB49741A7929560075687F /* AppDelegate.swift */,
+				B2CB49D81A7A3B800075687F /* Images.xcassets */,
 				B2CB49721A7929560075687F /* Supporting Files */,
 			);
 			path = RadyoEksen;
@@ -101,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				B2CB498F1A7929640075687F /* Icons */,
-				B2CB49761A7929560075687F /* Images.xcassets */,
 				B2CB49781A7929560075687F /* MainMenu.xib */,
 				B2CB49731A7929560075687F /* Info.plist */,
 			);
@@ -128,12 +152,33 @@
 		B2CB498F1A7929640075687F /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				B2CB49C11A7A3ACF0075687F /* AppIcon.iconset */,
+				B2CB49AA1A7A38930075687F /* eksen32.png */,
 				B2CB499A1A792B360075687F /* pause.png */,
 				B2CB499B1A792B360075687F /* play.png */,
 				B2CB49981A792AD40075687F /* eksen16.png */,
 				B2CB49901A7929640075687F /* eksenLogo.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		B2CB49C11A7A3ACF0075687F /* AppIcon.iconset */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB49C21A7A3ACF0075687F /* Contents.json */,
+				B2CB49C31A7A3ACF0075687F /* Icon_128x128.png */,
+				B2CB49C41A7A3ACF0075687F /* Icon_128x128@2x.png */,
+				B2CB49C51A7A3ACF0075687F /* Icon_16x16.png */,
+				B2CB49C61A7A3ACF0075687F /* Icon_16x16@2x.png */,
+				B2CB49C71A7A3ACF0075687F /* Icon_256x256.png */,
+				B2CB49C81A7A3ACF0075687F /* Icon_256x256@2x.png */,
+				B2CB49C91A7A3ACF0075687F /* Icon_32x32.png */,
+				B2CB49CA1A7A3ACF0075687F /* Icon_32x32@2x.png */,
+				B2CB49CB1A7A3ACF0075687F /* Icon_512x512.png */,
+				B2CB49CC1A7A3ACF0075687F /* Icon_512x512@2x.png */,
+			);
+			name = AppIcon.iconset;
+			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +261,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CB49771A7929560075687F /* Images.xcassets in Resources */,
+				B2CB49AB1A7A38930075687F /* eksen32.png in Resources */,
+				B2CB49CD1A7A3ACF0075687F /* Contents.json in Resources */,
 				B2CB49911A7929640075687F /* eksenLogo.png in Resources */,
+				B2CB49D71A7A3ACF0075687F /* Icon_512x512@2x.png in Resources */,
+				B2CB49D11A7A3ACF0075687F /* Icon_16x16@2x.png in Resources */,
 				B2CB499C1A792B360075687F /* pause.png in Resources */,
+				B2CB49D31A7A3ACF0075687F /* Icon_256x256@2x.png in Resources */,
+				B2CB49CF1A7A3ACF0075687F /* Icon_128x128@2x.png in Resources */,
+				B2CB49D51A7A3ACF0075687F /* Icon_32x32@2x.png in Resources */,
+				B2CB49D91A7A3B800075687F /* Images.xcassets in Resources */,
+				B2CB49D01A7A3ACF0075687F /* Icon_16x16.png in Resources */,
+				B2CB49D21A7A3ACF0075687F /* Icon_256x256.png in Resources */,
 				B2CB497A1A7929560075687F /* MainMenu.xib in Resources */,
+				B2CB49D61A7A3ACF0075687F /* Icon_512x512.png in Resources */,
 				B2CB49991A792AD40075687F /* eksen16.png in Resources */,
+				B2CB49D41A7A3ACF0075687F /* Icon_32x32.png in Resources */,
+				B2CB49CE1A7A3ACF0075687F /* Icon_128x128.png in Resources */,
 				B2CB499D1A792B360075687F /* play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +417,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RadyoEksen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -373,6 +431,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RadyoEksen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -432,6 +491,7 @@
 				B2CB498B1A7929560075687F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2CB498C1A7929560075687F /* Build configuration list for PBXNativeTarget "RadyoEksenTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +500,7 @@
 				B2CB498E1A7929560075687F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
