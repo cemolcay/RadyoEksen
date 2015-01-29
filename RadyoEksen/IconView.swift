@@ -9,27 +9,22 @@
 import Foundation
 import Cocoa
 
-class IconView : NSView
-{
+class IconView : NSView {
     var image: NSImage?
     let item: NSStatusItem?
     
     var onMouseDown: () -> ()
     
-    var isSelected: Bool
-    {
-        didSet
-        {
+    var isSelected: Bool {
+        didSet {
             //redraw if isSelected changes for bg highlight
-            if (isSelected != oldValue)
-            {
+            if (isSelected != oldValue) {
                 self.needsDisplay = true
             }
         }
     }
     
-    init(imageName: String, item: NSStatusItem)
-    {
+    init(imageName: String, item: NSStatusItem) {
         self.image = NSImage(named: imageName)!
         self.item = item
         self.isSelected = false
@@ -48,8 +43,7 @@ class IconView : NSView
     }
     
     
-    override func drawRect(dirtyRect: NSRect)
-    {
+    override func drawRect(dirtyRect: NSRect) {
         self.item!.drawStatusBarBackgroundInRect(dirtyRect, withHighlight: self.isSelected)
         
         let size = self.image!.size
@@ -58,13 +52,11 @@ class IconView : NSView
         self.image!.drawInRect(rect)
     }
     
-    override func mouseDown(theEvent: NSEvent)
-    {
+    override func mouseDown(theEvent: NSEvent) {
         self.isSelected = !self.isSelected;
         self.onMouseDown();
     }
     
-    override func mouseUp(theEvent: NSEvent)
-    {
+    override func mouseUp(theEvent: NSEvent) {
     }
 }

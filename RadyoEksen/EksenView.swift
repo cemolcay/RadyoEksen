@@ -12,7 +12,7 @@ import AVFoundation
 class EksenView: NSView {
 
     @IBOutlet var playButton: NSButton!
-    @IBOutlet var eksenLabel: NSTextField!
+    @IBOutlet var eksenLabel: NSTextView!
     
     let url: String = "http://46.20.3.198/listen.pls"
     var player: AVPlayer!
@@ -27,10 +27,6 @@ class EksenView: NSView {
         }
     }
    
-    
-    override func awakeFromNib() {
-     
-    }
     
     @IBAction func playPressed(sender: AnyObject) {
         if isPlaying {
@@ -67,7 +63,9 @@ class EksenView: NSView {
         if let item = object as? AVPlayerItem {
             if keyPath == "timedMetadata" {
                 var meta = (change["new"] as [AVMetadataItem])[0]
-                eksenLabel.stringValue = meta.value() as String
+                let label = meta.value() as String
+                let title = label.componentsSeparatedByString("\r")
+                eksenLabel.string = title[0]
             }
         }
     }

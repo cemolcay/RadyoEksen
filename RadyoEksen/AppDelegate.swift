@@ -26,18 +26,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         super.init();
     }
     
-    func applicationDidFinishLaunching(aNotification: NSNotification?)
-    {
+    func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
     }
     
-    func applicationWillTerminate(aNotification: NSNotification?)
-    {
+    func applicationWillTerminate(aNotification: NSNotification?) {
         // Insert code here to tear down your application
     }
     
-    override func awakeFromNib()
-    {
+    override func awakeFromNib() {
         //NSRectEdge is not enumerated yet; NSMinYEdge == 1
         //@see NSGeometry.h
         let edge = 1
