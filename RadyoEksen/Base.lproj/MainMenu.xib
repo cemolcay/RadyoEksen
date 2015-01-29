@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6233" systemVersion="14A329f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6233"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,9 +11,9 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RadyoEksen" customModuleProvider="target">
             <connections>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="popover" destination="7Lg-xC-X7m" id="fww-sE-Ezg"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -666,15 +666,48 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="RadyoEksen" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-        </window>
+        <viewController id="fqq-LA-BEO" userLabel="Popover View Controller">
+            <connections>
+                <outlet property="view" destination="n3J-6W-xES" id="4Dd-TY-sGe"/>
+            </connections>
+        </viewController>
+        <popover id="7Lg-xC-X7m">
+            <connections>
+                <outlet property="contentViewController" destination="fqq-LA-BEO" id="zxj-Cf-Wgc"/>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="q7S-kF-eP1"/>
+            </connections>
+        </popover>
+        <customView id="n3J-6W-xES" customClass="EksenView" customModule="RadyoEksen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-uz-JJm">
+                    <rect key="frame" x="36" y="8" width="147" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="justified" title="Radyo Eksen" id="U7M-wn-Koh">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSs-wY-8x7">
+                    <rect key="frame" x="0.0" y="-1" width="37" height="33"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="play" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="ZHp-5K-6eD">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playPressed:" target="n3J-6W-xES" id="q6S-w7-6dL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <connections>
+                <outlet property="eksenLabel" destination="aUD-uz-JJm" id="aev-3K-vSg"/>
+                <outlet property="playButton" destination="XSs-wY-8x7" id="wKP-dc-Yta"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="232.5"/>
+        </customView>
     </objects>
+    <resources>
+        <image name="play" width="50" height="50"/>
+    </resources>
 </document>

@@ -11,6 +11,13 @@
 		B2CB49771A7929560075687F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49761A7929560075687F /* Images.xcassets */; };
 		B2CB497A1A7929560075687F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49781A7929560075687F /* MainMenu.xib */; };
 		B2CB49861A7929560075687F /* RadyoEksenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49851A7929560075687F /* RadyoEksenTests.swift */; };
+		B2CB49911A7929640075687F /* eksenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49901A7929640075687F /* eksenLogo.png */; };
+		B2CB49951A79299D0075687F /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49941A79299D0075687F /* IconView.swift */; };
+		B2CB49971A7929B80075687F /* EksenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB49961A7929B80075687F /* EksenView.swift */; };
+		B2CB49991A792AD40075687F /* eksen16.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB49981A792AD40075687F /* eksen16.png */; };
+		B2CB499C1A792B360075687F /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB499A1A792B360075687F /* pause.png */; };
+		B2CB499D1A792B360075687F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CB499B1A792B360075687F /* play.png */; };
+		B2CB499F1A792CDA0075687F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CB499E1A792CDA0075687F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,13 @@
 		B2CB497F1A7929560075687F /* RadyoEksenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadyoEksenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CB49841A7929560075687F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CB49851A7929560075687F /* RadyoEksenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadyoEksenTests.swift; sourceTree = "<group>"; };
+		B2CB49901A7929640075687F /* eksenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eksenLogo.png; sourceTree = "<group>"; };
+		B2CB49941A79299D0075687F /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		B2CB49961A7929B80075687F /* EksenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EksenView.swift; sourceTree = "<group>"; };
+		B2CB49981A792AD40075687F /* eksen16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eksen16.png; sourceTree = "<group>"; };
+		B2CB499A1A792B360075687F /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		B2CB499B1A792B360075687F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		B2CB499E1A792CDA0075687F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CB499F1A792CDA0075687F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +70,7 @@
 		B2CB49661A7929560075687F = {
 			isa = PBXGroup;
 			children = (
+				B2CB499E1A792CDA0075687F /* AVFoundation.framework */,
 				B2CB49711A7929560075687F /* RadyoEksen */,
 				B2CB49821A7929560075687F /* RadyoEksenTests */,
 				B2CB49701A7929560075687F /* Products */,
@@ -73,9 +89,9 @@
 		B2CB49711A7929560075687F /* RadyoEksen */ = {
 			isa = PBXGroup;
 			children = (
+				B2CB49941A79299D0075687F /* IconView.swift */,
+				B2CB49961A7929B80075687F /* EksenView.swift */,
 				B2CB49741A7929560075687F /* AppDelegate.swift */,
-				B2CB49761A7929560075687F /* Images.xcassets */,
-				B2CB49781A7929560075687F /* MainMenu.xib */,
 				B2CB49721A7929560075687F /* Supporting Files */,
 			);
 			path = RadyoEksen;
@@ -84,6 +100,9 @@
 		B2CB49721A7929560075687F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2CB498F1A7929640075687F /* Icons */,
+				B2CB49761A7929560075687F /* Images.xcassets */,
+				B2CB49781A7929560075687F /* MainMenu.xib */,
 				B2CB49731A7929560075687F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -104,6 +123,17 @@
 				B2CB49841A7929560075687F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2CB498F1A7929640075687F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB499A1A792B360075687F /* pause.png */,
+				B2CB499B1A792B360075687F /* play.png */,
+				B2CB49981A792AD40075687F /* eksen16.png */,
+				B2CB49901A7929640075687F /* eksenLogo.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CB49771A7929560075687F /* Images.xcassets in Resources */,
+				B2CB49911A7929640075687F /* eksenLogo.png in Resources */,
+				B2CB499C1A792B360075687F /* pause.png in Resources */,
 				B2CB497A1A7929560075687F /* MainMenu.xib in Resources */,
+				B2CB49991A792AD40075687F /* eksen16.png in Resources */,
+				B2CB499D1A792B360075687F /* play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CB49751A7929560075687F /* AppDelegate.swift in Sources */,
+				B2CB49971A7929B80075687F /* EksenView.swift in Sources */,
+				B2CB49951A79299D0075687F /* IconView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
