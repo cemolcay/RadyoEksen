@@ -17,8 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let icon: IconView;
     
     override init() {
-        let bar = NSStatusBar.systemStatusBar();
-        let item = bar.statusItemWithLength(-1);
+      let bar = NSStatusBar.system;
+      let item = bar.statusItem(withLength: -1);
         
         self.icon = IconView(imageName: "eksen16", item: item);
         item.view = icon;
@@ -44,7 +44,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         icon.onMouseDown = {
             if (icon.isSelected)
             {
-                self.popover!.showRelativeToRect(rect, ofView: icon, preferredEdge: edge);
+              self.popover!.show(
+                relativeTo: rect,
+                of: icon,
+                preferredEdge: NSRectEdge(rawValue: UInt(edge))!)
                 return
             }
             self.popover!.close()
