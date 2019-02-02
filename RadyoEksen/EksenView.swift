@@ -17,6 +17,16 @@ class EksenView: NSView {
   let url: String = "http://46.20.3.198/listen.pls"
   var player: AVPlayer!
 
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    let item = AVPlayerItem (url: URL(string: url)!)
+    item.addObserver(self,
+                     forKeyPath: "timedMetadata",
+                     options: .new,
+                     context: nil)
+    player = AVPlayer (playerItem: item)
+  }
+
   var isPlaying: Bool = false {
     didSet {
       if isPlaying {
@@ -37,14 +47,6 @@ class EksenView: NSView {
   }
 
   func play () {
-    let item = AVPlayerItem (url: URL(string: url)!)
-
-    item.addObserver(self,
-                     forKeyPath: "timedMetadata",
-                     options: .new,
-                     context: nil)
-
-    player = AVPlayer (playerItem: item)
     player.play()
     isPlaying = true
   }
@@ -55,9 +57,9 @@ class EksenView: NSView {
   }
 
   override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-    if let _ = object as? AVPlayerItem,
+    if let item = object as? AVPlayerItem,
       keyPath == "timedMetadata",
-      let meta = (change?.first(where: { $0.key == .newKey }) as? [AVMetadataItem])?[0],
+      let meta = item.timedMetadata?.first,
       let label = meta.value as? String {
       let title = label.components(separatedBy: "\r")
       eksenLabel.string = title[0]
